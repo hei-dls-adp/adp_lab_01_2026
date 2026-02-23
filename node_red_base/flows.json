@@ -1,0 +1,546 @@
+[
+    {
+        "id": "b2e534a9a5491881",
+        "type": "tab",
+        "label": "Your First Node Here !",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "916a7dcd57334d97",
+        "type": "tab",
+        "label": "Documentation",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "55f560f139a6c5b5",
+        "type": "group",
+        "z": "b2e534a9a5491881",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "7288558c6ec81ff0",
+            "5590e3ff9cc61d31",
+            "2ae655fb5597ed5d"
+        ],
+        "x": 34,
+        "y": 459,
+        "w": 762,
+        "h": 142
+    },
+    {
+        "id": "2fc0336def1d763c",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "robot",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "navigationStyle": "default",
+        "titleBarStyle": "fixed",
+        "info": "# HES-SO Valais//Wallis"
+    },
+    {
+        "id": "8966a7b403a8fb88",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#8080ff",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "e45e312c80fc001e",
+        "type": "ctrlx-config",
+        "name": "Nodered",
+        "hostname": "192.168.0.200",
+        "debug": false
+    },
+    {
+        "id": "c5b0190b901ecb86",
+        "type": "ctrlx-config-subscription",
+        "device": "e45e312c80fc001e",
+        "name": "Subscribe",
+        "publishIntervalMs": "",
+        "publishIntervalUnits": "seconds",
+        "samplingInterval": "",
+        "samplingIntervalUnits": "seconds",
+        "errorInterval": "",
+        "errorIntervalUnits": "seconds",
+        "keepaliveInterval": "",
+        "keepaliveIntervalUnits": "minutes",
+        "queueSize": "",
+        "queueBehaviour": "DiscardOldest",
+        "deadbandValue": ""
+    },
+    {
+        "id": "5e3f352f60d7af69",
+        "type": "ui-page",
+        "name": "Documentations",
+        "ui": "2fc0336def1d763c",
+        "path": "/page3",
+        "icon": "home",
+        "layout": "notebook",
+        "theme": "8966a7b403a8fb88",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "6b2222aa7324c02b",
+        "type": "ui-group",
+        "name": "Base",
+        "page": "5e3f352f60d7af69",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "3c78dec33d077414",
+        "type": "ui-page",
+        "name": "Your First UI Page",
+        "ui": "2fc0336def1d763c",
+        "path": "/MyUI",
+        "icon": "account-school",
+        "layout": "grid",
+        "theme": "8966a7b403a8fb88",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "166995c74f30a0c3",
+        "type": "ui-group",
+        "name": "CPU",
+        "page": "3c78dec33d077414",
+        "width": "6",
+        "height": "6",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "0577a01e1cbd5b82",
+        "type": "ui-group",
+        "name": "Sensors",
+        "page": "3c78dec33d077414",
+        "width": "3",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f831cdf9ad24453e",
+        "type": "ui-group",
+        "name": "Loop",
+        "page": "3c78dec33d077414",
+        "width": "3",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "50a9174eeb819d28",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "b2e534a9a5491881",
+        "subscription": "c5b0190b901ecb86",
+        "path": "plc/app/Application/sym/GVL_Abox/uaAboxInterface/uaDigitalIn/Input_0_4",
+        "name": "",
+        "inputs": 0,
+        "x": 220,
+        "y": 100,
+        "wires": [
+            [
+                "c23cb6a79e5ba9dd"
+            ]
+        ]
+    },
+    {
+        "id": "c23cb6a79e5ba9dd",
+        "type": "ui-button-group",
+        "z": "b2e534a9a5491881",
+        "name": "",
+        "group": "0577a01e1cbd5b82",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "label": "H1",
+        "className": "",
+        "rounded": true,
+        "useThemeColors": true,
+        "passthru": false,
+        "options": [
+            {
+                "label": "",
+                "icon": "leak",
+                "value": "true",
+                "valueType": "bool",
+                "color": "#009933"
+            },
+            {
+                "label": "",
+                "icon": "leak-off",
+                "value": "false",
+                "valueType": "bool",
+                "color": "#999999"
+            }
+        ],
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4da93ea4c046628a",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "b2e534a9a5491881",
+        "subscription": "c5b0190b901ecb86",
+        "path": "plc/app/Application/sym/PRG_Student/diMyLoop",
+        "name": "",
+        "inputs": 0,
+        "x": 240,
+        "y": 320,
+        "wires": [
+            [
+                "8ba87174846b5d84",
+                "b443580da105fc40"
+            ]
+        ]
+    },
+    {
+        "id": "b443580da105fc40",
+        "type": "ui-text",
+        "z": "b2e534a9a5491881",
+        "group": "f831cdf9ad24453e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "The loop: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 780,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "7288558c6ec81ff0",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "b2e534a9a5491881",
+        "g": "55f560f139a6c5b5",
+        "subscription": "c5b0190b901ecb86",
+        "path": "framework/metrics/system/cpu-utilisation-percent",
+        "name": "",
+        "inputs": 0,
+        "x": 240,
+        "y": 500,
+        "wires": [
+            [
+                "5590e3ff9cc61d31"
+            ]
+        ]
+    },
+    {
+        "id": "5590e3ff9cc61d31",
+        "type": "ui-gauge",
+        "z": "b2e534a9a5491881",
+        "g": "55f560f139a6c5b5",
+        "name": "CPU Usage",
+        "group": "166995c74f30a0c3",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "CPU Usage",
+        "alwaysShowTitle": false,
+        "units": "%",
+        "icon": "cpu-64-bit",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "20",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "90",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 590,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2ae655fb5597ed5d",
+        "type": "comment",
+        "z": "b2e534a9a5491881",
+        "g": "55f560f139a6c5b5",
+        "name": "Get CPU Usage from DataLayer",
+        "info": "",
+        "x": 640,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "8ba87174846b5d84",
+        "type": "debug",
+        "z": "b2e534a9a5491881",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "6873face1550cac4",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "b2e534a9a5491881",
+        "subscription": "c5b0190b901ecb86",
+        "path": "plc/app/Application/sym/GVL_Abox/uaAboxInterface/uaDigitalIn/Input_0_5",
+        "name": "",
+        "inputs": 0,
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "974ef27d94deb0f5"
+            ]
+        ]
+    },
+    {
+        "id": "974ef27d94deb0f5",
+        "type": "ui-button-group",
+        "z": "b2e534a9a5491881",
+        "name": "",
+        "group": "0577a01e1cbd5b82",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "label": "H2",
+        "className": "",
+        "rounded": true,
+        "useThemeColors": true,
+        "passthru": false,
+        "options": [
+            {
+                "label": "",
+                "icon": "leak",
+                "value": "true",
+                "valueType": "bool",
+                "color": "#009933"
+            },
+            {
+                "label": "",
+                "icon": "leak-off",
+                "value": "false",
+                "valueType": "bool",
+                "color": "#999999"
+            }
+        ],
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "08fa3a7b6d84b56f",
+        "type": "ui-button-group",
+        "z": "b2e534a9a5491881",
+        "name": "",
+        "group": "0577a01e1cbd5b82",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "label": "H3",
+        "className": "",
+        "rounded": true,
+        "useThemeColors": true,
+        "passthru": false,
+        "options": [
+            {
+                "label": "",
+                "icon": "leak",
+                "value": "true",
+                "valueType": "bool",
+                "color": "#009933"
+            },
+            {
+                "label": "",
+                "icon": "leak-off",
+                "value": "false",
+                "valueType": "bool",
+                "color": "#999999"
+            }
+        ],
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9c78a44cc4761e2",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "b2e534a9a5491881",
+        "subscription": "c5b0190b901ecb86",
+        "path": "plc/app/Application/sym/GVL_Abox/uaAboxInterface/uaDigitalIn/Input_0_6",
+        "name": "",
+        "inputs": 0,
+        "x": 210,
+        "y": 240,
+        "wires": [
+            [
+                "08fa3a7b6d84b56f"
+            ]
+        ]
+    },
+    {
+        "id": "335a3d74571cbab5",
+        "type": "ui-markdown",
+        "z": "916a7dcd57334d97",
+        "group": "6b2222aa7324c02b",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "content": "<h1 align=\"left\">\n  <br>\n  <img src=\"./img/hei-en.png\" alt=\"HEI-Vs Logo\" width=\"350\">\n  <br>\n  HEI-Vs Engineering School \n</h1>\n  \n<h2>   Automation in Development and Production </h2>\n  <br>\n\nCourse DLS/ADP\n\nAuthor: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)\n\n> Version 2026, V1.0\n\n\n# LAB 01 Introduction to PLC\n**PLC** for Programming Locic Controller.\n\n## Table of contents\n\n- [Objectives](#objectives)\n- [Environment Overview](#environment-overview)\n    - [CtrlX Core](#ctrlx-core)\n    - [Software](#software)\n        - [ctrlX WORKS](#ctrlx-works)\n        - [HMI](#hmi)\n    - [Node-Red](#node-red)\n        - [Installing Node-Red](#installing-node-red)\n- [Your First Program](#your-first-program)\n    - [Implement the following program in the PLC](#implement-the-following-program-in-the-plc)\n    - [Procedure](#procedure)\n    - [Data Layer](#data-layer)\n    - [Visualizing variables](#visualizing-variables)\n    - [Linking variables to the hardware](#linking-variables-to-the-hardware)\n    - [About STRUCT](#about-struct)\n    - [About watch window](#about-watch-window)\n    - [Your job](#your-job)\n- [What is a Function Block](#what-is-a-function-block)\n- [Programming a Rising Edge Detector](#programming-a-rising-edge-detector)\n    - [Complete the PLC program with the code below](#complete-the-plc-program-with-the-code-below)\n- [Programming a Timer](#programming-a-timer)\n- [Use of state machine](#use-of-state-machine)\n    - [Using ENUM](#using-enum)\n    - [State Machine with CASE..OF](#state-machine-with-caseof)\n- [What else?](#what-else)\n- [Annexe](#annexe)\n    - [PLC Tags, SDS, Software Design Specification](#plc-tags-sds-software-design-specification)\n- [Information](#information)\n\n*Annexe:*\n-   [QuickStart_ctrlX_PLC to load and upload your first project from archive.](./QuickStart_ctrlX_PLC.md)\n\n\n*Keywords:* **plc FUNCTION BLOCK CYCLIC TASK R_TRIG TON**\n\n# Objectives\nUnderstand the basic operating principles of a PLC.\n\nTo achieve these objectives, the following exercises will be carried out:\n\n- Using a structure to read and write inputs/outputs\n- Programming an edge detector\n- Programming a timer\n- Basic logic functions\n- State machine\n  \n---\n\n# Environment Overview\n## CtrlX Core\nThe PLC program will be executed in the **ctrlX Core** available on each unit in the automation lab.\n\nThe **ctrlX Core** operates on a real-time Linux operating system embedded within an electrical axis controller (64-bit quad-core ARM processor).\n\n<figure>\n    <img src=\"./img/CtrlX_CORE_Architecture-drive-based.jpg\"\n         alt=\"CtrlX CORE Architecture drive based\">\n    <figcaption>CtrlX CORE Architecture drive based</figcaption>\n</figure>\n\n<br>\n\n\nThe \"ctrlX Core\" is an open architecture that allows the integration of various applications and services.\n\n<figure>\n    <img src=\"./img/ctrlX CORE PLC Runtime Overview.png \"\n         alt=\"ctrlX CORE PLC Runtime Overview\" width=\"700\">\n    <figcaption>ctrlX CORE PLC Runtime Overview</figcaption>\n</figure>\n\n---\n\n## Software\n\n### ctrlX WORKS\n\nCtrlX WORKS is a software suite developed by Bosch Rexroth for programming and managing **ctrlX Core** systems.\n\nIt allows the management of devices, whether real or virtual, connected to the development PC.\n\nctrlX WORKS includes an integrated development environment (IDE) for programming in the languages ​​described in the IEC 61131-3 standard, called **ctrlX PLC Engineering**.\n\n> Version of CtrlX WORKS used at the time of writing: 3.6.3\n\nLink to download ctrlX Works:\n[Rexroth Store CtrlX Works](https://apps.boschrexroth.com/microsites/ctrlx-automation/en/portfolio/ctrlx-works/). For your information. It is not necessary to download this software suite for HEVS courses.\n\n\n<br>\n\n<figure>\n    <img src=\"./img/ctrlX WORKS Engineering.png\"\n         alt=\"ctrlX WORKS - Device Management\">\n    <figcaption>ctrlX WORKS - Device Management</figcaption>\n</figure>\n\n\n<br>\n\n<figure>\n    <img src=\"./img/ctrlX PLC Engineering.png\"\n         alt=\"ctrlX PLC Engineering\" >\n    <figcaption>ctrlX PLC Engineering</figcaption>\n</figure>\n\n<br>\n\n\n<br>\n\n#### HMI\nCurrent HMIs, Human-Machine Interfaces, are often developed using web technologies.\n\nCurrently, more and more HMI solutions are based on low-code or no-code concepts. Details on Node-RED will be developped in the next modules.\n\n\n<figure>\n    <img src=\"./img/NodeRedExempleHes.png\"\n         alt=\"NodeRedExempleHes\">\n    <figcaption>Example with a Node-RED Dashboard</figcaption>\n</figure>\n\n\n---\n\n## Node-Red\n\nNode-RED is a flow-based development tool for visual programming, primarily used to connect hardware devices, APIs, and services.\n\nIt allows you to create applications by connecting building blocks called \"nodes\" within a graphical user interface.\n\n<figure>\n    <img src=\"./img/NodeRed.png\"\n         alt=\"Node-Red Icon\" width=\"100\"> \n</figure>\n\nKey features of Node-RED:\n\n- Visual programming: Uses a drag-and-drop interface to create data streams.\n\n- Based on Node.js: Allows the use of a wide variety of Node.js modules.\n\n- Extensible: Regularly updated Node library with new features.\n\n- Open source: Free and maintained by an active community.\n\n\n### Installing Node-Red\n  \n#### Prérequis\n\nFor Node-RED to function, the JavaScript runtime environment \"Node.js\" must be installed beforehand.\n\n-> [Download Node.js](https://nodejs.org/en/download/current)\n\nThis environment has already been installed on the PCs in the automation lab.\n\nHowever, **you must install \"Node-RED\" on the PC in the automation lab** by following the procedure below.\n\nAfter this installation, your Node-RED environment will be installed\nin your own user profile under C:\\Users[your_username].node-red.\n\n#### Installation Procedure\n\n##### 1. Install Node-RED\n\n- Open the Command Prompt (cmd.exe)\n- Enter the command: `npm install -g --unsafe-perm node-red`\n- Check the versions of Node.js and Node-RED with the command: `node-red --version`\n\nIf the software versions are not displayed, repeat the installation procedure using Windows PowerShell instead of the Command Prompt.\n \n##### 2. Starting Node-RED\n\n- Open the command prompt (cmd.exe)\n- Enter the command: node-red\n\n##### 3. Accessing the Node-RED user interface\n\n- Open your web browser\n- Enter the URL: http://localhost:1880\n\n##### 4. Install the modules required for our application\n\n- Click on the 3 horizontal lines in the upper right corner\n<figure>\n    <img src=\"./img/OuvrirPalette.png\"\n         alt=\"Node-Red Icon\" \n         width=\"300\"> \n</figure>\n\n:arrow_right: Manage the palette\n\n:arrow_right: Select the \"Install\" tab\n\n:arrow_right: Install the following modules:\n\n- @flowfuse/node-red-dashboard\n\n- node-red-contrib-ctrlx-automation\n\n##### 5. Stop Node-RED\n\nIn the command prompt window, press Ctrl + C or close the command prompt window\n\n\n**N.B.**: After starting Node-RED for the first time, the configuration files and streams will be stored under: C:\\Users\\[your_username]\\.node-red.\n\n##### 6.  Copier le fichier de base \"flows.json\" mis à disposition\n\nReplace the \"flows.json\" file located in the C:\\Users\\[your_username]\\.node-red directory with the \"flows.json\" file available on GitLab.\n\n##### 7. Restart Node-RED :arrow_right: [see step 2](#2-starting-node-red)\n\n##### 8. Access the Node-RED user interface :arrow_right: [see step 3](#3-accessing-the-node-red-user-interface)\n\nYou should see the following user interface:\n\n<div align=\"center\">\n<figure>\n    <img src=\"./img/YourFirstNode.png\"\n         alt=\"Your first Node\" \n         width=\"500\"> \n</figure>\n</div>\n---\n\n## Your First Program\n\n#### Objective\nImplement a counter in a task and verify that the task is executed correctly.\n\n#### Prerequisites\nOpen ctrlX PLC Engineering and perform the following procedure:\n\n[Procedure to load the project archive here](QuickStart_ctrlX_PLC.md).\n\n### Implement the following program in the PLC\n\n:bulb: In IEC 61131-3 programming, all variables are **static**, **must** have a defined type and **must** be defined in a header before their use in the program.\n\n:bulb: It is possible to define an initial value for a variable. Here: **3**.\n\n```iecst\nPROGRAM PLC_PRG\nVAR\n    // UINT for Usigned Integer, 16 bits.\n    // ui prefix for program readability \n    uiCount    : UINT := 3;\nEND_VAR\n```\n```iecst\nuiCount := uiCount + 1;\n```\n\n#### Procedure\n1. Select PRG Student (PRG).\n2. Write the program.\n3. Compile.\n4. Load the program into the PLC.\n5. Start the program.\n\n<div align=\"center\">\n<figure>\n    <img src=\"./img/FirstPrgm.png\"\n         alt=\"My First Program\">\n    <figcaption>My first program</figcaption>\n</figure>\n</div>\n\nThe upper part of the window allows you to define the variables and the lower part allows you to write the program.\n\n<div align=\"center\">\n<figure>\n    <img src=\"./img/LoginWithDownload.png\"\n         alt=\"Select: Login with download\"\n         width=\"300\">\n    <figcaption>Select \"Login with download\"</figcaption>\n</figure>\n</div>\n\nFor a variable to be accessible from Node-RED, the compiler must be informed.\n\n:bulb: This step is important, because you will decide, as a PLC programmer, what variables should be accessible, but, maybe more important, **what variables should not**.\n\n#### Instructions\n\n1. Select **Symbol Configuration**\n2. Select the \"iCount\" variable\n3. Click \"Build\".\n   \n\n<div align=\"center\">\n<figure>\n    <img src=\"./img/SymbolConfig.png\"\n         alt=\"Configure Symbol Configuration\">\n    <figcaption>Configure Symbol Configuration</figcaption>\n</figure>\n</div>\n\nIf the **Symbol Configuration** icon is not present, you must add it by going to the IDE: :arrow_right: Tab :arrow_right: Project :arrow_right: Add Object :arrow_right: Symbol Configuration...\n\nThe next time you download the program, the \"iCount\" variable will be accessible in the [Data Layer](#data-layer) of CtrlX-Core from within Node-RED.\n\n##### Data Layer\nThe Data Layer acts as a backbone in the CtrlX-Core architecture, ensuring the exchange of \"real-time\" and \"non-real-time\" data between different applications.\n\nThe Data Layer does not directly store the data, but acts as an intermediary, knowing its location and structure.\n\n### Visualizing variables.\nIt is very important to understand that in real-time programming, it is not possible, and **forbidden**, to interrupt the program, for example with a breakpoint. This would be like turning off the ignition of a car traveling at 120 km/h on the highway.\n\nFor this reason, it is important to be able to visualize variables while the system is running. PLC programming IDEs are all designed to facilitate this task.\n\n- Online visualization in the code.\n\n- Watch windows \n- Signals can also be recorded for more precise visualization over time. This function is not required in this lab, but an introduction is [available here](QuickStart_ctrlX_PLC_Trace.md).\n\n\n### Linking variables to the hardware.\n:bulb: PLC tags are user-defined names, symbols that act as a bridge between the software program and physical input/output hardware, typically mapped using absolute addresses like ``%I0.0`` for inputs or ``%Q0.0`` for outputs. They are configured in tag tables, where descriptive names are assigned to hardware channels for easier programming.\n\nThe principle of accessing variables is specific to each PLC supplier. In the case of lab 23.N411, the variables are provided via an interface that writes the inputs to a data structure and reads the output variables from that same structure.\n\n\n### About STRUCT\n\nAn IEC 61131-3\nSTRUCT (Structure) is a user-defined, composite data type that groups multiple, different variable types under one name, allowing for organized and efficient data handling in PLC programming. It enables complex data modeling—such as bundling status, speed, and position for a motor—and is accessed using dot notation ``StructName.MemberName``.\n\n```iecst\nTYPE ST_Motor :\nSTRUCT\n\tstatus   : WORD;\n\tspeed    : REAL;\n\tposition : REAL;\nEND_STRUCT\nEND_TYPE\n\n```\n\nThe interface to the hardware is mapped to a big struct. See abstract below.\n\n```mermaid\nclassDiagram\n    class UA_AboxInterface {\n        UA_AnalogIn uaAnalogIn\n        UA_AnalogOut uaAnalogOut\n        UA_DigitalInput_32 uaDigitalIn\n        UA_DigitalOutput_32 uaDigitalOut\n        UA_O300_DL uaO300_DL_Optic\n        UA_O300_ZL uaO300_ZL_Optic\n    }\n\n    class UA_AnalogIn\n    class UA_AnalogOut\n    class UA_DigitalInput_32\n    \n    class UA_DigitalOutput_32{\n        BOOL Output_0_0\n        BOOL Output_0_1\n        ...\n    }\n\n\n    class UA_O300_DL\n    class UA_O300_ZL\n\n    UA_AboxInterface *-- UA_AnalogIn : uaAnalogIn\n    UA_AboxInterface *-- UA_AnalogOut : uaAnalogOut\n    UA_AboxInterface *-- UA_DigitalInput_32 : uaDigitalIn\n    UA_AboxInterface *-- UA_DigitalOutput_32 : uaDigitalOut\n    UA_AboxInterface *-- UA_O300_DL : uaO300_DL_Optic\n    UA_AboxInterface *-- UA_O300_ZL : uaO300_ZL_Optic\n```\n\nThe UA_ABoxInteface belongs to a Global variable ``GVL_Abox``, that is, with access from anywhere in the program.\n\nFor example, to read the value of a digital input you can write:\n\n```iecst\n    // We use x as prefix for BOOL, because b is reserved for BYTE.\n    x_Button_S1 := GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_0;\n```\n\nOne big advantage of workinkg with STRUCT, is the **intellisense**. Just write GVL_A in your program and the IDE will help you to find what you need.\n\n### About watch window.\nA watch window in an IEC 61131-3 IDE is a debugging tool that lets you monitor and observe the real-time values of variables while a PLC program is running.\n\nIt is mainly used during testing and troubleshooting of PLC applications.\n\nIn the upper menu of CtrlX PLC View :arrow_right: Watch :arrow_right: Watch 1\n\n-   Use intellisense to search a variable in Expression of watch.\n-   Or drag and paste a variable from the program to the watch.\n\n<div align=\"center\">\n<figure>\n<img src=\"./img/Watch_1_xMyTestOutput.png\"\n     alt=\"Watch_1_x_Signal_H1\" \n     width=\"500\">\n<figcaption>Watch Window, right-click write value</figcaption>\n</figure>\n</div>\n\nIt is possible to use the watch window to display any variable, including ``STRUCT``.\n\n:bulb: you can use the watch window to modify a variable. But do not forget that the program is cycilc, if you modify a variable which is written by the program, the value will be overwritten at next cycle.\n\n> You could force the variable to a given value, but I do not like that, it can be dangerous on some machines.\n\n```iecst\ndiMyLoop := diMyLoop + 1;\n\n//\n// Manage inputs\n//\n\nx_Button_S1 := GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_0;\n\n// Execute Control Modules\n  \n\n//\n// Manage outputs\n//\nGVL_Abox.uaAboxInterface.uaDigitalOut.Output_0_0 := x_Signal_H1;\n\n// End of file\n```\n\n### Your job\nProgram a sequence to turn on signals H2, H3, then read the value of buttons S2 and S3.\n\n---\n\n## What is a Function Block ?\nA Function Block is an object, like a ``class`` in Python. A Function Block has inputs, outputs, internal memory and code.\n\nA simple exemple of **Function Block** is a trigger, that is the output is set to TRUE during only one cycle when input goes from ``FALSE`` to ``TRUE``. Typical use is to count every time a sensor is activated.\n\n### Example of code for a Function Block\n\n```iecst\n//\twww.hevs.ch\n//\tcedric.lenoir@hevs.ch\n//\tFebruary 13, 2026\n//\n//\tA custom R_TRIG\n//\nFUNCTION_BLOCK FB_Trigger\nVAR_INPUT\n    xCLK    : BOOL;\t\t\nEND_VAR\nVAR_OUTPUT\n    xQ      : BOOL;\nEND_VAR\nVAR\n    xMemory : BOOL;\nEND_VAR\n```\n\n```iecst\n// Output condition\nIF NOT xMemory AND\n    xCLK        THEN\t\t\n    xQ := TRUE;\nELSE\n    xQ := FALSE;\nEND_IF\n\n// Store input of last cycle\nxMemory := xCLK;\n\n// End of Function Block\n```\n\n### Use of Function Block\nWe have to create an instance of the Function Block, then to run it cyclically.\nIn the example of code below, we use the trigger to count how many time the operator is pressing the button S4.\n\n#### Create instance\n```iecst\nPROGRAM PRG_Student\nVAR\n    x_Button_S4 : BOOL;\n    uliCounter  : ULINT;\n    // Create instance of Function Block\n    fbMyTrig    : FB_Trigger;\nEND_VAR\n```\n\n#### Call instance of the Function Block\n\n```iecst\n//\n// Manage inputs\n//\n\nx_Button_S4 := GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_3; \n\n\n// Execute Control Modules \n// Call instance of Function Bock with input S4\nfbMyTrig(xCLK := x_Button_S4);\n// Use output of trigger to increment Unsigned Long Int, 64 bits\nIF fbMyTrig.xQ THEN\n    uliCounter := uliCounter + 1;\nEND_IF\n\n```\n\n\n---\n### Programming a Rising Edge Detector\n\n### Objective\nStart the conveyor as soon as a rising edge is detected by a **start** button and stop it as soon as a rising edge is detected by a **stop** button. Both buttons will be implemented in Node-RED.\n\n### Prerequisites\n- Connect the conveyor to the Siemens PLC\n- Activate the model using the \"S5\" push button\n\n<div align=\"center\">\n<figure>\n<img src=\"./img/Convoyeur.jpg\"\n     alt=\"CheckConveyorPowerOn.jpg\" \n     width=\"500\">\n<figcaption>The Conveyor</figcaption>\n</figure>\n</div>\n\n### Introduction\nThe detection of rising or falling edges can be programmed using the **R_TRIG**,Rising Trigger, function block and the **F_TRIG**, Falling Trigger, function block, respectively. R_TRIG is a Standart Function Block running exactly as FB_Trigger. See [Example of code for a Function Block](#example-of-code-for-a-function-block).\n\n#### Operating Principle of R_TRIG\nThis functional block consists of:\n\n- 1 input: CLK (BOOL)\n- 1 output: Q (BOOL)\n\nWhen a rising edge is detected on the CLK input, the Q output goes to TRUE for a single program execution cycle.\n\n\n## Complete the PLC program with the code below\n\n```iecst\n\nPROGRAM PRG_Student\nVAR\n    uiCount             : UINT := 3;\n    startFromNodeRed    : BOOL;\n    stopFromNodeRed     : BOOL;\n    rTrigStart          : R_TRIG;\n    rTrigStop           : R_TRIG;\n\nEND_VAR\n\n```\n\n\n```iecst\n\n// Start conveyor\nIF rTrigStart.Q THEN\n    GVL_Abox.uaAboxInterface.uaDigitalOut.Output_0_4 := TRUE;\nEND_IF\n\n// Stop conveyor\nIF rTrigStop.Q THEN\n    GVL_Abox.uaAboxInterface.uaDigitalOut.Output_0_4 := FALSE;\nEND_IF\n\n\n// Call function block\nrTrigStart(CLK:=startFromNodeRed);\nrTrigStop(CLK:=stopFromNodeRed);\n\n```\n\n<br>\n\n**Note:** The structured variable ``GVL_Abox.uaAboxInterface.uaDigitalOut.Output_0_4`` is assigned to the \"right direction\" motor control of the conveyor belt.\n\nNext, access to the ``startFromNodeRed`` and ``stopFromNodeRed`` variables must be granted in **Symbol Configuration** so that Node-RED can use them (See previous exercise for instructions)..\n\n---\n\n## Programming a Timer\n\n### Objective\nComplete the program so that the conveyor stops if the **stop** button is pressed or if a **certain amount of time has elapsed**.\n\n### Introduction\n\nTimers are functional blocks very commonly used in **PLC** programming. There are three main types:\n\n1. **TON** (Timer On-Delay): This is an on-delay timer. It activates its output after a programmed delay when its input is activated.\n\n2. **TOF** (Timer Off-Delay): This is a trigger timer. It keeps its output active for a defined time after its input is deactivated.\n\n3. **TP** (Timer Pulse): This timer generates a pulse of fixed duration. Once triggered by a rising edge on its input, it activates its output for a set duration, regardless of subsequent changes to the input.\n\nEach timer type has the following parameters:\n\n- IN: Boolean input to trigger the timer\n- PT: Preset time\n- Q: Boolean output\n- ET: Elapsed time\n\nThe parameters `PT`` and ``ET`` have a **TIME** data type.\n\nExample format: ``T#5d4h3m2s1ms``\n\n### Complete the PLC program by adding the variable declaration below\n\n```iecst\nPROGRAM PRG_Student\nVAR\n\t...\n\n\ttonConveyorStop : TON;\nEND_VAR\n```\n\n## Use of state machine\n\nBelow we define a state machine, it says that a device can enter the conveyor only at station 1, and must pass thru each station. That is the states are very strict.\n\n```mermaid\nstateDiagram-v2\n    [*] --> IDLE\n    IDLE --> Station1 : start\n    Station1 --> Station2 : next\n    Station2 --> Station3 : next\n    Station3 --> Station4 : next\n    Station4 --> IDLE : finished / reset\n\n    %% Optional error transitions\n    Station1 --> IDLE : error\n    Station2 --> IDLE : error\n    Station3 --> IDLE : error\n    Station4 --> IDLE : error\n```\n\n:bulb: Try to ask an AI to: *build a mermaid state machine with Idle, Station 1, Station 2, Station 3 and 4*. Normally it works very well. It could be variants, but you can then modify the state machine.\n\n### Using ENUM\nIn IEC 61131-3 we use enumeration to build the states. This is a kind of type with defined values.\n\n:bulb: You could ask an AI to build an IEC 61131-3 ENUM for this state machine.\n\n```iecst\n// I made very few modifications to the answer of the AI.\n// I want to chose the values of states selected as DINT\nTYPE E_ConveyorStates :\n(\n    eIDLE      := 0,\n    eSTATION1  := 10,\n    eSTATION2  := 20,\n    eSTATION3  := 30,\n    eSTATION4  := 40\n) DINT := eIDLE;\nEND_TYPE\n\n```\n\n:bulb: Finally I asked an AI to build the code of the state machine in IEC 61131-3 using ``eConveyorStates := E_ConveyorStates``; Sometimes it works very well, sometimes not. When writing this example, I had to write my clean own code.\n\n### State Machine with CASE..OF\n#### Header of the program\n\n```iecst\nPROGRAM PRG_Student\nVAR\n\tdiMyLoop\t\t\t: DINT;\n\n\txSensor_1\t\t\t: BOOL;\t\n\txSensor_2\t\t\t: BOOL;\t\n\txSensor_3\t\t\t: BOOL;\t\n\txSensor_4\t\t\t: BOOL;\t\n\txActivateConveyor\t: BOOL;\n\teConveyorStates \t: E_ConveyorStates;\n\tstrStateInfo\t\t: STRING;\nEND_VAR\n```\n\n#### Core of the program\nThe code below is not complete. What could be interersting, is to ask an AI to write the mermaid state machine of this code. It is only a simplified state machine.\n\n:bulb: note the ``STRING`` ``strStateInfo``, it helps the operator to read easily what the machine is doing.\n\n```iecst\ndiMyLoop := diMyLoop + 1;\n\n//\n// Manage inputs\n// We do not use directly input values in our code.\n//\nxSensor_1 := GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_4;\nxSensor_2 := GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_5;\nxSensor_3 := GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_6;\n// Level of sensor 4 is inverted\nxSensor_4 := NOT GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_7; \n\n//\n// Logic of the control\n//\nCASE eConveyorStates OF\n\tE_ConveyorStates.eIDLE :\n\t\tstrStateInfo := 'Idle';\n\t\tIF xSensor_1 THEN\n\t\t\teConveyorStates := E_ConveyorStates.eSTATION1;\n\t\tEND_IF\n\n\tE_ConveyorStates.eSTATION1:\n\t\tstrStateInfo := 'In station one';\n\t\tIF xSensor_2 THEN\n\t\t\teConveyorStates := E_ConveyorStates.eSTATION2;\n\t\tEND_IF\n\n\tE_ConveyorStates.eSTATION2:\n\t\tstrStateInfo := 'In station two';\n\t\tIF xSensor_3 THEN\n\t\t\teConveyorStates := E_ConveyorStates.eSTATION3;\n\t\tEND_IF\n\n\tE_ConveyorStates.eSTATION3:\n\t\tstrStateInfo := 'In station three';\t\n\t\tIF xSensor_4 THEN\n\t\t\teConveyorStates := E_ConveyorStates.eSTATION4;\n\t\tEND_IF\n\n\tE_ConveyorStates.eSTATION4:\n\t\tstrStateInfo := 'In station four';\t\n\t\tIF NOT xSensor_4 THEN\n\t\t\teConveyorStates := E_ConveyorStates.eIDLE;\n\t\tEND_IF\nEND_CASE\n\n// Activate conyeyor if not Idle\nxActivateConveyor := NOT (eConveyorStates = E_ConveyorStates.eIDLE);\n\n//\n// Manage outputs\n//\nGVL_Abox.uaAboxInterface.uaDigitalOut.Output_0_4 := xActivateConveyor;\n\n// End of file\n\n```\n\n## What else ?\n\nNow you have all the elements needed to build a clean conveyor. You could for exemple complete the state machine with an eERROR state to activate a buzzer in case of abnormal situation.\n\nThen you could complete the state machine to select conditions conducting to the error state, as for exemple the device going directly from station 1 to 4 or set an alarm if the device remains in the same station for too long. \n\n\n```iecst\nxBuzzer := (eConveyorStates = E_ConveyorStates.eERROR);\n\n```\n\n# Annexe\n\n<div align=\"center\">\n<figure>\n    <img src=\"./img/ConvoyeurDataStructure.jpg\"\n         alt=\"Lost image UnitStructConveyor\", width = 800>\n    <figcaption>Conveyor data structures.</figcaption>\n</figure>\n</div>\n\n## PLC Tags, SDS, Software Design Specification\n|Siemens Address|Data Type|ctrlX Global Var Struct                         |Hardware on conveyor|\n|---------------|---------|------------------------------------------------|--------------------|\n|%I0.0          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_0  |Push Button S1      | \n|%I0.1          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_1  |Push Button S2      | \n|%I0.2          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_2  |Push Button S3      | \n|%I0.3          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_3  |Push Button S4      | \n|%I0.4          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_4  |Sensor Active B1    | \n|%I0.5          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_5  |Sensor Active B2    | \n|%I0.6          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_6  |Sensor Active B3    | \n|%I0.7          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalIn.Input_0_7  |Sensor Not Active B4| \n|%Q0.0          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalOut.Output_0_0|Led H1              | \n|%Q0.1          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalOut.Output_0_1|Led H2              |\n|%Q0.2          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalOut.Output_0_2|Led H3              |\n|%Q0.3          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalOut.Output_0_3|Led H4              |\n|%Q0.4          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalOut.Output_0_4|Contactor K1        |\n|%Q0.5          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalOut.Output_0_5|Contactor K2        |\n|%Q0.6          |BOOL     |GVL_Abox.uaAboxInterface.uaDigitalOut.Output_0_6|Buzzer A1           |\n\n# Information\n\n> Upon request, the **ctrlX Works** software can be provided for installation on your laptop, Windows only!. But you do not need anymore during this semester.\n\n\n<!-- end of file -->\n\n",
+        "className": "",
+        "x": 327.75,
+        "y": 190.75,
+        "wires": [
+            []
+        ]
+    }
+]
