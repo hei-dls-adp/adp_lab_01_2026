@@ -198,6 +198,13 @@ If the software versions are not displayed, repeat the installation procedure us
 - Open the command prompt (cmd.exe)
 - Enter the command: node-red
 
+> Variant if node-red does not start:
+```
+> Open the command prompt (cmd.exe)
+> Enter the command: cd C:\Users\Your_Username\AppData\Roaming\npm
+> Enter the command: node-red
+```
+
 ##### 3. Accessing the Node-RED user interface
 
 - Open your web browser
